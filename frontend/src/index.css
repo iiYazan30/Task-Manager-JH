@@ -291,6 +291,18 @@ textarea:focus {
   box-shadow: none;
 }
 
+.form-error,
+.alert-error {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid #ffd1d1;
+  border-radius: 8px;
+  color: #9b1c1c;
+  background: #fff1f1;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .secondary-action {
   min-height: 44px;
   padding: 0 18px;
@@ -388,6 +400,26 @@ textarea:focus {
 .task-list {
   display: grid;
   gap: 16px;
+}
+
+.state-card,
+.empty-state {
+  padding: 24px;
+  border: 1px dashed #cfd6e4;
+  border-radius: 8px;
+  color: var(--muted);
+  background: var(--surface-soft);
+  text-align: center;
+}
+
+.empty-state h3 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 18px;
+}
+
+.empty-state p {
+  margin: 0;
 }
 
 .task-card {
